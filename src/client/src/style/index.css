@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&family=Zen+Maru+Gothic&display=swap');
+
+body {
+  background: rgb(158, 158, 158) !important;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+h1 {
+  color:rgb(255, 255, 255);
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+}
+h2 {
+  background: #333;;
+  color: white;
+}
+button {
+  background: gray;
+  border: none;
+  color: white;
+}
+header {
+  background: rgb(255, 145, 0);
+  margin: 20px;
+  
+}
+
+
+section {
+  background: white;
+  color: gray;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+p {
+  
+  text-align: center;
+  
+ }
+ .p1 {
+     text-align: center;
+     
+ }
+ .p2 {
+     text-align: center;
+     font-family: 'Zen Maru Gothic', sans-serif;
+ }
+nav ul {
+  
+  margin: 20px;
+  padding: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+  
+  
+  
+}
+nav li {
+  float: left;
+  display: flex;
+  
+}
+nav a {
+  
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  word-spacing: 3px;
+}
+nav a:hover {
+ background: rgb(255, 145, 0);
+ color: white;
+ text-decoration: none;
+}
+
+nav a:active {
+  background-color:rgb(255, 255, 255);
+}
+
+
+footer {
+  background: black;
+  padding: 10px 20px;
+}
+
+.nav-color {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.abtmesty {
+  background-color: orange; 
+    background-image: linear-gradient(to left, rgb(255, 233, 106), orange);
+    margin: 20px;
+    height: 600px;
+    width: 900px;
+    border-radius: 30px;}
+
+.h1cls {font-size: 10vw;
+  font-family: 'Twinkle Star', cursive;}
+
+
+@media (min-width: 768px) {
+  .nav-brand {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 992px) {
+  .nav-brand {
+    font-size: 2.8rem;
+  }
+}
+
+.container {
+  animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+
+  }
+}
+.container2 {
+  margin: 0px 0px 0px 0px;
+  animation: transitionSun 6s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes transitionSun {
+  from {
+      opacity: 0;
+    
+  }
+
+  to {
+      opacity: 1;
+    
+
+  }
+}
+.mycanvas {
+  background: rgb(117, 108, 108);
+  height: 590px;
+  width: 150px;
+  position: absolute;
+  margin: 10px 10px 50px 1000px;
+  border-radius: 30px;
+ 
+
+}
+
+.stringshape {
+  background: black;
+  
+  width: 1px;
+  height: 2px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0px;
+  left: 55px;
+  animation: drop2 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.395, 1.650, 0.065, 0.655);
+ 
+}
+
+.sunshape {
+  background: rgba(255, 232, 100, 0.979);
+  width: 120px;
+  height: 120px;
+  position: relative;
+
+  
+  transform: rotate(20deg);
+  animation: drop 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.395, 1.650, 0.065, 0.655);
+  
+  
+  
+}
+.sunshape:before {
+  content: "";
+  position: absolute;
+  top: 50;
+  left: 50;
+  height: 120px;
+  width: 120px;
+  background: rgba(255, 232, 100, 0.979);
+  transform: rotate(135deg);
+  
+}
+.sunshape:after {
+  content: "";
+  position: absolute;
+  
+      width: 115px;
+      height: 120px;
+      background-color: red;
+      background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow);
+      border-radius: 50%
+  
+}
+
+@keyframes drop{
+  
+  
+  from {top: 0px;}
+  to {top: 125px;}
+  
+}
+
+@keyframes drop2{
+
+  from {height: 2px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;}
+  to {height: 125px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;}
+
+}
+.scheduling {
+  font-size: 2.5rem;
+  padding-bottom: 1.8%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.book-session-btn {
+  color: white;
+  font-size: 1.2rem;
+  padding: 2% 8%;
+  border-radius: 25px;
+  background-color: orange;
+  border: 2px white solid;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+.book-session-btn:hover {
+  color: orange;
+  background-color: white !important;
+  border: 2px solid black !important;
+}
+
+@media (min-width: 768px) {
+  .book-session-btn {
+    font-size: 1.4rem;
+    padding: 0.5% 5%;
+  }
+}
+/* .big-img-container {
+  padding: 10% 0;
+}
+
+@media (min-width: 768px) {
+  .big-img-container {
+    padding: 4% 0;
+  }
+}
+.big-img {
+  width: 96%;
+  border-radius: 25px;
+  border-bottom-left-radius: 25px;
+}  */
+
+.selected-slot {
+  font-size: 1.25rem;
+  padding-bottom: 2%;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+  display: none;
+}
+
+.booking-dropdown {
+  width: 85%;
+  padding: 4% 0;
+  background-color: #d36bd6;
+  color: white;
+  margin: 2% 0;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.booking-dropdown:hover {
+  background-color: orange;
+  color: white;
+}
+.booking-dropdown:focus {
+  outline: none;
+  box-shadow: none;
+}
+.booking-dropdown-menu {
+  outline: none;
+}
+.booking-dropdown-item:hover {
+  background-color: white;
+}
+.booking-dropdown-item:active {
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .booking-dropdown {
+    font-size: 1.2rem;
+  }
+}
+.slot-display-message {
+  padding: 2% 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.slots-display {
+  background-color: orange;
+  margin: 10% 2%;
+  padding: 3% 5%;
+  border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+  .slots-display {
+    margin: 6% 2.5%;
+  }
+}
+.slot-key {
+  padding-top: 1%;
+  padding-bottom: 4.5%;
+  color: white;
+}
+
+.available-slots {
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.slot-container {
+  margin: 0 1%;
+}
+
+.slot {
+  background-color: rgba(245, 246, 250, 0.4);
+  padding: 15px;
+  border-radius: 25px;
+  min-width: 80px;
+}
+
+.slot-row {
+  margin-bottom: 8px;
+}
+
+.selectable-slot:hover {
+  cursor: pointer;
+}
+.selectable-slot:hover-row {
+  padding: 5px;
+}
+
+.full-slot {
+  background-color: white;
+  border: solid 2px white;
+  border-radius: 50%;
+  padding: 1px 10px;
+  margin: 3px;
+}
+
+.available-slot{
+  background-color: orange;
+  border: solid 2px white;
+  border-radius: 50%;
+  padding: 1px 10px;
+  margin: 3px;
+}
+
+.slot-name {
+  color: white;
+  font-size: 0.8rem;
+  padding-top: 15px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.appointment-details-container {
+  padding: 0 4%;
+  padding-bottom: 5%;
+}
+
+.appointment-details {
+  margin: 0 2%;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 768px) {
+  .appointment-details {
+    margin-bottom: 0;
+  }
+}
+.appointment-input:focus {
+  border-color: black;
+  box-shadow: 0 0;
+}
+
+.appointment-error {
+  color: #c0392b;
+  font-size: 1.1rem;
+  padding-bottom: 3%;
+}
+
+.thanks-header {
+  padding: 5% 0;
+  padding-top: 10%;
+  font-size: 2.5rem;
+  font-family: 'Rochester', cursive;
+}
+
+.thanks-subtext {
+  font-size: 1.2rem;
+  padding: 2%;
+  font-family: 'Rochester', cursive;
+}
+
+
+@media (min-width: 768px) {
+  .thanks-header {
+    font-family: 'Rochester', cursive;
+    font-size: 5.5rem;
+  }
+
+  .thanks-subtext {
+    font-family: 'Rochester', cursive;
+    font-size: 2.2rem;
+  }
+
+ 
+}
+
+

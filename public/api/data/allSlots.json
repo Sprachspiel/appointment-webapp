@@ -1,0 +1,10 @@
+{
+  "slots": [
+    {
+      "name": "Available Session",
+      "capacity": 1,
+      "isAvailable": true
+      }
+   
+  ]
+}
