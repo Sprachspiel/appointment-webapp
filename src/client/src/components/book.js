@@ -48,7 +48,7 @@ export default props => {
     "4PM",
     "5PM"
   ]);
-  // Basic reservation "validation"
+  // Basic appointment "validation"
   const [appointmentError, setAppointmentError] = useState(false);
 
   const getDate = _ => {
@@ -147,7 +147,7 @@ export default props => {
     }
   };
 
-  // Clicking on a table sets the selection state
+  // Clicking on a slot sets the selection state
   const selectSlot = (slot_name, slot_id) => {
     setSelection({
       ...selection,
@@ -158,7 +158,7 @@ export default props => {
     });
   };
 
-  // Generate party size dropdown
+  // Generate client group size dropdown
   const getSizes = _ => {
     let newSizes = [];
 
@@ -211,7 +211,7 @@ export default props => {
   };
 
 
-  // Generating tables from available tables state
+  // Generating slots from available slots state
   const getSlots = _ => {
     console.log("Getting slots");
     if (getEmptySlots() > 0) {
