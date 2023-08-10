@@ -3,13 +3,13 @@ import React from "react";
 
 
 
-const KimsWeb = () => {
+const Yourweb = () => {
 
     const Myelement = (
     <div>
     <header>
-    <h1>My Pilates - 2319 Timberloch Pl (Unit F) - The Woodlands, TX</h1>
-    <h2>Kim Childers</h2>
+    <h1>SAMPLE</h1>
+    <h2>SAMPLE</h2>
     </header>
     <div className="container">
     <section>
@@ -32,5 +32,5 @@ const KimsWeb = () => {
         Myelement
     )};
 
-    export default KimsWeb
+    export default Yourweb
 
